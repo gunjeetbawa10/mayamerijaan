@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f5f7;
+  --foreground: #1d1d1f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+  --font-serif: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+}
+
+.apple-hero {
+  background:
+    radial-gradient(circle at 20% 10%, #f4e8ff 0%, transparent 38%),
+    radial-gradient(circle at 85% 40%, #e8f0ff 0%, transparent 34%),
+    linear-gradient(180deg, #ffffff, #f8f8fa 62%, #f5f5f7);
+}
+
+.surface {
+  @apply rounded-3xl border border-black/5 bg-white/80 shadow-[0_18px_50px_rgba(0,0,0,0.05)] backdrop-blur;
+}
+
+.title-serif {
+  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+}
