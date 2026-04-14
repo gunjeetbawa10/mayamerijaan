@@ -4,7 +4,7 @@ import { JourneyNextButton } from "@/components/journey-actions";
 const photos = [
   { src: "/images/1.jpeg", alt: "Us photo 1" },
   { src: "/images/2.jpeg", alt: "Us photo 2" },
-  { src: "/images/3.jpeg", alt: "Us photo 3" },
+ 
   { src: "/images/4.jpeg", alt: "Us photo 4" },
   { src: "/images/5.jpeg", alt: "Us photo 5" },
   { src: "/images/6.jpeg", alt: "Us photo 6" },
