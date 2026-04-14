@@ -111,7 +111,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
 
       <main className="mx-auto w-full max-w-6xl px-4 pb-16 pt-44 sm:px-6 md:pt-36">{children}</main>
       <footer className="border-t border-black/5 py-8 text-center text-sm text-black/45">
-        This website is made to show the love and care Gunjeet holds for Sandhya. I love you.
+        This website is made to show the love and care Gunjeet holds for Sandhya. I love you, always.
       </footer>
     </div>
   );

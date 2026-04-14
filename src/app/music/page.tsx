@@ -27,8 +27,8 @@ export default function MusicPage() {
       <p className="text-sm uppercase tracking-[0.22em] text-black/45">Music</p>
       <h1 className="title-serif mt-4 text-4xl sm:text-5xl">This song is for you</h1>
       <p className="mx-auto mt-6 max-w-3xl text-black/65 sm:text-lg">
-        This is the music I created for you. I hope you like it. Please play this song ❤️ This is the song of our
-        sweets we used to play.
+        I made this music for you with a full heart. I hope when you listen, you feel the love, regret, and hope I
+        could never explain properly in words. Please play this song ❤️ It reminds me of us.
       </p>
 
       <audio ref={audioRef} src="/music/song.mp3" preload="none" onPause={() => setIsPlaying(false)} />

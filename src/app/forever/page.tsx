@@ -11,8 +11,12 @@ export default function ForeverPage() {
   const [openLetter, setOpenLetter] = useState(false);
 
   const message = useMemo(() => {
-    if (choice === "YES") return "You just made me the happiest person 🥹❤️";
-    if (choice === "TIME") return "I’ll wait patiently. Always.";
+    if (choice === "YES") {
+      return "Please my baby, give me one chance. I promise I will protect your heart with honesty, respect, and love. 🥹❤️";
+    }
+    if (choice === "TIME") {
+      return "Please my baby, give me one chance when your heart is ready. I will wait with patience, respect, and love.";
+    }
     return "";
   }, [choice]);
 
@@ -21,13 +25,13 @@ export default function ForeverPage() {
       <section className="surface px-6 py-14 text-center sm:px-12">
         <p className="text-sm uppercase tracking-[0.22em] text-black/45">My Message</p>
         <h1 className="title-serif mx-auto mt-4 max-w-4xl text-4xl leading-tight sm:text-6xl">
-          Maya, please give me one chance.
+          Maya, I am asking for one chance.
           <br />
-          One chance to prove I can be better.
+          One chance to show you real change.
           <br />
-          One chance to make you feel safe again.
+          One chance to make your heart feel safe again.
           <br />
-          I believe in us. I believe in our love.
+          I believe in us, and I will earn your trust with actions.
           <br />I really love you ❤️
         </h1>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -66,11 +70,11 @@ export default function ForeverPage() {
                 exit={{ opacity: 0, y: 10 }}
                 className="mt-5 rounded-2xl border border-black/10 bg-white p-4 leading-7 text-black/75"
               >
-                I really love you my baby.
+                I really love you, my baby.
                 <br />
-                Please give me a chance.
+                Please give me a chance to make things right.
                 <br />
-                Please Maya... just one last chance.
+                I will choose honesty, respect, and care every day.
               </motion.div>
             )}
           </AnimatePresence>
@@ -96,7 +100,7 @@ export default function ForeverPage() {
               className="surface w-full max-w-md p-8 text-center"
               onClick={(event) => event.stopPropagation()}
             >
-              <h3 className="title-serif text-3xl">Thank you</h3>
+              <h3 className="title-serif text-3xl">Please my baby</h3>
               <p className="mt-4 text-black/70">{message}</p>
               <button
                 type="button"

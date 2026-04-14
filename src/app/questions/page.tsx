@@ -5,11 +5,11 @@ import { useState } from "react";
 import { JourneyNextButton } from "@/components/journey-actions";
 
 const questions = [
-  "Do you remember the first time we met and your smile?",
-  "Do you remember your birthday dance to Baby Doll?",
-  "Do you remember our long video calls and laughing for hours?",
-  "Do you remember our Liverpool trip and bowling together?",
-  "Do you know how much those moments mean to me?",
+  "Do you remember the first day we met, and how your smile stayed in my mind?",
+  "Do you remember your birthday dance to Baby Doll and how happy you looked?",
+  "Do you remember our long video calls, when we laughed until time disappeared?",
+  "Do you remember our Liverpool trip and bowling, and how light everything felt?",
+  "Do you know those moments are still some of the most beautiful parts of my life?",
 ];
 
 export default function QuestionsPage() {
@@ -41,7 +41,7 @@ export default function QuestionsPage() {
               animate={{ opacity: 1, y: 0 }}
               className="text-xl text-black/75 sm:text-3xl"
             >
-              Because every moment with you is magical to me.
+              Every memory with you still feels warm, alive, and precious to me.
             </motion.p>
           )}
         </AnimatePresence>

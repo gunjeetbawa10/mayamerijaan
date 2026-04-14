@@ -9,11 +9,12 @@ export default function HomePage() {
           This website is only for you, Maya ❤️
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base text-black/65 sm:text-xl">
-          Because words were not enough, so I built this letter as a calm, classic space.
+          Some feelings are too heavy for one message, so I made this small journey to show you what lives in my
+          heart every single day.
         </p>
         <div className="mt-8 text-sm text-black/55 sm:text-base">
-          <p>I still remember when I first made a website for you and you got shocked 🥹</p>
-          <p className="mt-2">And yes, I bought this domain for you, meri jaan ❤️</p>
+          <p>I still remember when I first made a website for you and your reaction made me so happy 🥹</p>
+          <p className="mt-2">Even this domain is a reminder that you have always been special to me, meri jaan ❤️</p>
         </div>
         <JourneyNextButton
           currentPath="/"

@@ -4,7 +4,7 @@ import { JourneyNextButton } from "@/components/journey-actions";
 const photos = [
   { src: "/images/1.jpeg", alt: "Us photo 1" },
   { src: "/images/2.jpeg", alt: "Us photo 2" },
-  { src: "/images/3.jpeg", alt: "Us photo 3" },
+
   { src: "/images/4.jpeg", alt: "Us photo 4" },
   { src: "/images/5.jpeg", alt: "Us photo 5" },
   { src: "/images/6.jpeg", alt: "Us photo 6" },
@@ -18,8 +18,9 @@ export default function MemoriesPage() {
         <p className="text-sm uppercase tracking-[0.22em] text-black/45">Memories & Appreciation</p>
         <h1 className="title-serif mt-4 text-4xl sm:text-5xl">The reason this exists ❤️</h1>
         <p className="mx-auto mt-5 max-w-3xl text-black/65 sm:text-lg">
-          Her smile when we first met. The birthday champagne moment. Dancing while cooking. Long video calls.
-          Everything felt warmer with you. You are amazing, and I am deeply grateful for you.
+          Your smile when we first met, the birthday champagne moment, dancing while cooking, and our long calls late
+          into the night. You made ordinary days feel beautiful. You cared for me in ways I can never forget, and I
+          carry deep gratitude for you in my heart.
         </p>
       </section>
 
@@ -42,7 +43,7 @@ export default function MemoriesPage() {
             </div>
           ))}
         </div>
-        <p className="py-6 text-center text-lg text-black/70">I love you so much.</p>
+        <p className="py-6 text-center text-lg text-black/70">I love you deeply, and I still cherish us.</p>
         <div className="pb-4 text-center">
           <JourneyNextButton
             currentPath="/memories"
