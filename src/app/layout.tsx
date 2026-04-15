@@ -1,23 +1,42 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Poppins } from "next/font/google";
-import SiteShell from "@/components/site-shell";
+import { Inter, Playfair_Display } from "next/font/google";
+import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "For Maya | A Love Letter",
-  description: "A classic romantic website built with love.",
+  metadataBase: new URL("https://sandhyagurung.art"),
+  title: {
+    default: "Sandhya Gurung | Contemporary Painter",
+    template: "%s | Sandhya Gurung",
+  },
+  description:
+    "Enter the world of Sandhya Gurung, a distinguished painter from Nepal based in the UK, where acrylic landscapes become meditations on memory, light, and grace.",
+  keywords: [
+    "Sandhya Gurung",
+    "contemporary painter",
+    "acrylic landscapes",
+    "UK artist",
+    "Nepal artist",
+    "original paintings",
+  ],
+  openGraph: {
+    title: "Sandhya Gurung | Contemporary Painter",
+    description:
+      "A refined portfolio of poetic landscapes by Sandhya Gurung, celebrating a rare artistic voice and a deeply human presence.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -26,9 +45,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${playfair.variable} h-full`}>
-      <body className="min-h-full">
-        <SiteShell>{children}</SiteShell>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} h-full antialiased`}>
+      <body className="min-h-full bg-background text-foreground">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,15 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f5f7;
-  --foreground: #1d1d1f;
+  --background: #faf8f4;
+  --foreground: #171717;
+  --card: #ffffff;
+  --muted: #6b6861;
+  --border: #e7e2d8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-poppins);
+  --color-card: var(--card);
+  --color-muted-foreground: var(--muted);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
+}
+
+.dark {
+  --background: #0f0f0f;
+  --foreground: #f5f5f5;
+  --card: #171717;
+  --muted: #b1aca4;
+  --border: #2a2a2a;
 }
 
 html {
@@ -19,20 +33,30 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
-.apple-hero {
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.hero-gradient {
   background:
-    radial-gradient(circle at 20% 10%, #f4e8ff 0%, transparent 38%),
-    radial-gradient(circle at 85% 40%, #e8f0ff 0%, transparent 34%),
-    linear-gradient(180deg, #ffffff, #f8f8fa 62%, #f5f5f7);
+    radial-gradient(circle at 20% 20%, rgba(244, 209, 170, 0.45), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(175, 210, 222, 0.35), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(229, 194, 211, 0.25), transparent 40%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(247, 242, 233, 0.92));
 }
 
-.surface {
-  @apply rounded-3xl border border-black/5 bg-white/80 shadow-[0_18px_50px_rgba(0,0,0,0.05)] backdrop-blur;
-}
-
-.title-serif {
-  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+.cinematic-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(12, 12, 12, 0.2) 0%,
+    rgba(12, 12, 12, 0.45) 70%,
+    rgba(12, 12, 12, 0.65) 100%
+  );
 }
