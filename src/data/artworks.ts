@@ -2,18 +2,17 @@ import { Artwork } from "@/types/artwork";
 
 export const artworks: Artwork[] = [
   {
-    slug: "himalayan-whisper",
-    title: "Himalayan Whisper",
+    slug: "menai-bridge-wales",
+    title: "Menai Bridge, Wales",
     description:
-      "A sumptuous mountain composition where silence, distance, and light are rendered with exquisite sensitivity.",
+      "A nocturne study of Menai Bridge where architecture, motion, and evening light unfold with cinematic calm.",
     story:
-      "Inspired by childhood mornings in Nepal, this work revisits the hush between mountain shadow and first light. Sandhya captures belonging, longing, and grace with extraordinary composure.",
-    size: "60 x 80 cm",
+      "Painted from lived observation and memory, this piece reflects Sandhya's fascination with crossing points, both physical and emotional. The bridge becomes a symbol of transition, courage, and connection.",
+    size: "30 x 40 cm",
     medium: "Acrylic on canvas",
     year: "2025",
     price: "£1,250",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80",
+    image: "/artworks/menai-bridge-wales.png",
     featured: true,
   },
   {
